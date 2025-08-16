@@ -1,0 +1,168 @@
+/* === Reset & Base Styles === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    background: linear-gradient(to right, #002f4b, #003764);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* === Outer Cage (Login Card) === */
+.login-wrapper {
+    display: flex;
+    width: 900px;
+    max-width: 95%;
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* === Left Panel Inside Cage === */
+.login-left {
+    flex: 1;
+    background-color: #032b44;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+}
+
+.login-left .illustration {
+    max-width: 80%;
+    margin-bottom: 20px;
+}
+
+.login-left .terms {
+    font-size: 12px;
+    color: #ccc;
+    line-height: 1.4;
+}
+
+.login-left .terms a {
+    color: #4ec3ff;
+    text-decoration: none;
+}
+
+.login-left .terms a:hover {
+    text-decoration: underline;
+}
+
+/* === Right Panel Inside Cage === */
+.login-right {
+    flex: 1;
+    background: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 320px;
+    text-align: center;
+}
+
+.logo {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin: 10px 0 5px;
+    color: #003764;
+}
+
+.subtitle {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/* === Input Fields === */
+.input-group {
+    display: flex;
+    align-items: center;
+    background: #e9f0fa;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    padding: 10px;
+}
+
+.input-group .icon {
+    color: #003764;
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+}
+
+/* === Login Options Row === */
+.login-options {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    margin-bottom: 15px;
+    align-items: center;
+}
+
+.login-options label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.forgot {
+    color: #003764;
+    text-decoration: none;
+}
+
+.forgot:hover {
+    text-decoration: underline;
+}
+
+/* === Login Button === */
+.btn-login {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: linear-gradient(to right, #007bff, #001f5c);
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+.btn-login:hover {
+    opacity: 0.9;
+}
+/* === Responsive Design === */
+@media (max-width: 768px) {
+    .login-wrapper {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .login-left, .login-right {
+        flex: none;
+        width: 100%;
+    }
+}
